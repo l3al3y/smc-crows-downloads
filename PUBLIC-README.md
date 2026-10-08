@@ -1,43 +1,48 @@
-# Super Mecha Champions — Crows Android
+# SMC Crows Android r4
 
-Prepared for **MiloSuam, APK merger/developer and fellow SMC player**.
-
+**MiloSuam, APK merger/developer and fellow SMC player**
 “I want all players to be able to play this nostalgic game again.”
+Original game: NetEase Games. Community revival connection kit: Super Mecha Crows.
 
-This bundle contains the rebuilt `SMC-Crows.apk`, its three matching resource ZIPs, checksums and verification records; source is maintained privately. Game: NetEase Games. Community revival connection kit: Super Mecha Crows. Preserve those credits when distributing.
+## Install and play
 
-## Player setup
+1. Install `SMC-Crows.apk`. Keep the existing community app installed when updating: the signing certificate is unchanged, and account files are preserved.
+2. First setup downloads and verifies the three matching Android resource ZIPs, extracts all 22 NPKs, and preserves the original-first-start then Crows patch sequence. Wi-Fi, pause/retry and offline ZIP import remain supported. No Termux or manual Android folder copying is needed.
+3. After full setup, reopening checks the saved resource state and automatically opens the game. Full hashing/extraction runs only when needed for setup, an APK update, changed/missing resources or manual repair. Use “Stay in setup / verify and repair resources” for a full check.
 
-1. Install `SMC-Crows.apk` and open it. The app downloads the three matching resource packs over Wi-Fi; mobile data requires selecting its button. A downloaded matching ZIP can also be imported through the file picker.
-2. Setup verifies the resource files and extracts all 22 Android NPKs into the native resource store. It checks the installed textures, maps and skin resources before continuing. Keep the phone awake during setup; pause and retry are supported.
-3. Run the original game once, wait for its login screen and close it. Return to setup and confirm the first-start attempt to apply Crows. If the old resource-verification server is unavailable, the setup explains the explicit continuation option; an early unexplained crash is not successful initialization.
-4. The app verifies the Crows script patch, certificate, startup flags and account before enabling Play. Keep account backups. No Termux, PC patch installer, ADB or manual directory copy is needed for this app flow.
+Destination: `Android/data/com.netease.g93na/files/netease/smc/`. Native paths: `res_patch/<unsigned hash % 1023>/<unsigned hash>`. Account files stay separate.
 
-The destination is Android's app-owned directory, normally `Android/data/com.netease.g93na/files/netease/smc/`. Decoded files use `res_patch/<unsigned hash % 1023>/<unsigned decimal hash>`. Different old bytes at pinned resource paths are retained under `Documents/crows_integrity_backup/` before replacement. Account files remain separate.
+## Matching downloads
 
-## Matching files
+APK download: https://drive.google.com/file/d/1wNCScK6BptW6FiQGngItznr7pG9rnqXK/view
+
+APK: 2,539,852,614 bytes. SHA-256: `1d42be2fc7992a3fb4c93254890ef9f392fe69776811cf20eeefa9a589db80d3`.
+
+Resources are unchanged from r2 and now hosted in the dedicated public download repository:
+https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-android-20261008-r2
 
 | File | Bytes | SHA-256 |
 | --- | ---: | --- |
-| `SMC-Crows.apk` | 2,539,848,518 | `b2cb6a128f88d7e0c9e6c37097af2ed63fb5fc7b6daaae7c3b3c80ca7b0c3229` |
-| `resources/SMC-resources-1of3.zip` | 1,803,718,578 | `4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53` |
-| `resources/SMC-resources-2of3.zip` | 1,799,284,140 | `a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb` |
-| `resources/SMC-resources-3of3.zip` | 1,957,663,734 | `cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e` |
+| `SMC-resources-1of3.zip` | 1,803,718,578 | `4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53` |
+| `SMC-resources-2of3.zip` | 1,799,284,140 | `a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb` |
+| `SMC-resources-3of3.zip` | 1,957,663,734 | `cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e` |
 
-Resource download: about 5.56 GB. Installed source resources: 5,560,659,512 bytes. Decoded native store: 9,621,067,461 bytes / 119,076 files, plus 29 recovered Android resources / 2,441,563 bytes. APK installation and temporary download/import staging need additional storage; setup calculates the remaining space from existing verified files and partial downloads. The APK does not contain the full 5.56 GB external bundle itself.
+About 5.56 GB downloaded resources and 9.62 GB decoded resources, plus APK installation and temporary staging space. Setup calculates remaining space from actual verified/partial files. The APK is not a single file containing the entire external resource bundle.
 
-## What changed and what passed
+## Verified behavior and phone evidence
 
-The exact preserved gameplay-reference APK was used as the base. Only `classes8.dex` and `assets/crows/store.tsv` changed among existing payloads. The complete Android inventory and 29 recovered native Android files are used; no Steam DLLs, PC scripts, PC texture conversions or experimental texture layer are included.
+All 1,874 non-setup APK payload hashes, native engine, scripts, resources and manifest remain unchanged from published r2. Only setup `classes8.dex` changed. The six setup/import/download/receipt/patch integrity host suites, complete ZIP CRC, signature certificate and alignment checks passed.
 
-Checks passed: source reproduces the baseline setup DEX exactly before changes; all 119,076 Java-decoded hashes match the independent Android inventory; all 30 resource-container files occur exactly once across the three ZIPs; all 29 recovered payloads are checked; all 1,842 retained APK payload hashes match the reference. APK signatures v1/v2/v3, the existing signing certificate, 4/16 KB ZIP alignment, all ZIP CRCs and duplicate ZIP/DEX checks passed.
+The preceding r3 setup candidate automatically reopened on Samsung S26 Ultra / Android 16 in 6.344 seconds. The player reported no further freeze after the graphics comparison and tested 30/45/60/90/120 FPS. The session started with Energy Saving/Low resolution/Low mecha effects; graphics were subsequently adjusted by the player. This is observed phone behavior, not an identified native engine fix. r4 adds only the verified resource-host URL change to that setup code. The exact r4 APK was installed, completed its full update verification, reached login and the textured lobby, and reopened the game in 6.312 seconds without repeating the full scan. The 6.312-second measure ends when the game activity opens; it is not the total login time.
 
-Host tests cover ordered patching, independent account generation and preservation, first-start migration/recovery, corrupt/unknown/incomplete resource imports, interrupted multi-pack downloads, correct ranges and servers ignoring ranges, quota/HTML rejection, corrupt downloads, pause/retry, staging checks, false markers, same-size installed corruption, preserved old resource backups, installed patch/certificate/config/flag failures, and storage accounting for fresh/retry/offline setup.
+If a dash freeze occurs on your device, the successful diagnostic profile used Energy Saving, Low resolution, Low mecha effects, AA off, shadows off and HDR off. FPS was subsequently player-tested at all five selectable rates; the release does not force a 30 FPS cap or change global GPU settings. Other devices, complete-match stability, every pilot/skin and battle-pass screen are not established by this single phone session.
 
-## Publication and actual gameplay status
+Ordinary reopen uses complete pinned file size/time/inventory/build checks plus actual patch verification. Deliberately same-size corruption with preserved timestamps requires the manual full SHA verification. Successful install/update/repair still hashes every pinned resource.
 
-Published release: https://irfanfahmi.com/smc/. The matching resource routes use release tag `smc-android-20261008-r2`. The APK download button records APK download requests; it does not measure completed transfers, installations or unique players. Previous counts and releases are preserved.
+## Source, evidence and APK count
 
-**The exact published APK reached gameplay on Samsung S26 Ultra / Android 16; a persistent dash freeze was reproduced and remains under investigation.** Full-match stability, affected pilot/skin screens, battle-pass layout and performance are not established by archive checks. This build adds strict resource installation checks; it does not prove the cause of the earlier reported crash or a battle-pass UI fix. Historical screenshots are separately labeled with the older APK hash and must not be advertised as evidence for this rebuild. After authorization to publish, verify anonymous GET, redirects, Range behavior and actual size/SHA-256 for every APK/resource link before enabling the public buttons.
+Website: https://irfanfahmi.com/smc/
+Public downloads: https://github.com/l3al3y/smc-crows-downloads
+Private development source: https://github.com/l3al3y/smc-crows-source
 
-Detailed records: `APK-verification.json`, `source-and-host-verification.json`, `resource-bundle-verification.json`, `SMC-resource-manifest.json`, and `retained-game-payloads.json`. Source archive is preserved in the private development repository. Local source workspace: `work/public-release-20261008-r2/`. Original APKs, XAPKs and resource archives remain preserved.
+Screenshots are tied to their recorded APK hashes; older-build pictures remain labeled. APK count measures button requests, not completed downloads or unique players. Existing counts and original artifacts are preserved. Raw phone logs/accounts/signing credentials are excluded from distribution.
