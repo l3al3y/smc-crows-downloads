@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-09",
+  "public_repository": "l3al3y/smc-crows-downloads",
+  "private_repository": "l3al3y/smc-crows-source",
+  "site_commit": "f8e9406fff118aa64e20299e1ae953aed9423fcd",
+  "apk": {
+    "sha256": "1d42be2fc7992a3fb4c93254890ef9f392fe69776811cf20eeefa9a589db80d3",
+    "bytes": 2539852614,
+    "hosting": "Drive; unchanged because over GitHub 2 GiB release-file limit",
+    "drive_id": "1wNCScK6BptW6FiQGngItznr7pG9rnqXK"
+  },
+  "canonical_releases": [
+    {
+      "tag": "smc-android-20261008-r4",
+      "id": 406832185,
+      "url": "https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-android-20261008-r4",
+      "assets": [
+        {
+          "name": "APK-verification.json",
+          "size": 2915,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r4/APK-verification.json",
+          "id": 621882418,
+          "digest": "sha256:44a0eec386d1449ca17f44ef455876e14b67205f103fadc617be7a20c1fe1ac9"
+        },
+        {
+          "name": "evidence.json",
+          "size": 1513,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r4/evidence.json",
+          "id": 621882439,
+          "digest": "sha256:5ebc67d406b3d0e0d42d33a68f6c2a0001bdfc26868440c7a03e5c41863557f3"
+        },
+        {
+          "name": "PUBLIC-README.md",
+          "size": 4534,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r4/PUBLIC-README.md",
+          "id": 621882312,
+          "digest": "sha256:7b7181fed01110a25c8213e4625c9358881bda8f78f6c6174fbf6aa203d7b939"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 351,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r4/SHA256SUMS",
+          "id": 621882371,
+          "digest": "sha256:6f2b270953d23f7a092a8de92562a1c5f34010e3a3cc8030da3aac3e3db202b8"
+        },
+        {
+          "name": "SMC-resource-manifest.json",
+          "size": 6785,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r4/SMC-resource-manifest.json",
+          "id": 621882385,
+          "digest": "sha256:7e37133267e836f0f3a025ed376f8978455a3dd20aebd814652c74488c1ffcd3"
+        }
+      ]
+    },
+    {
+      "tag": "smc-android-20261008-r2",
+      "id": 406783300,
+      "url": "https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-android-20261008-r2",
+      "assets": [
+        {
+          "name": "APK-verification.json",
+          "size": 5361,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/APK-verification.json",
+          "id": 621748575,
+          "digest": "sha256:99ce5ec5f48592bcb4e22ca78662ce06d67c015fc82be38e9fdbd58046ac1092"
+        },
+        {
+          "name": "PUBLIC-README.md",
+          "size": 5548,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/PUBLIC-README.md",
+          "id": 621754146,
+          "digest": "sha256:4b821110d5b8e171bf207a2129967954e5ef255eda1b203573bc64245fdb2f4f"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 469,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/SHA256SUMS",
+          "id": 621748521,
+          "digest": "sha256:f3d2d6b1f8fe37a7619d292d5a4841acb3f1b0320c760357f30368dac2dd0e88"
+        },
+        {
+          "name": "SMC-resource-manifest.json",
+          "size": 6777,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/SMC-resource-manifest.json",
+          "id": 621748546,
+          "digest": "sha256:eb2e16f675adf1d990316301146fe940ad6283097e62575f4c1db5bde36cf048"
+        },
+        {
+          "name": "SMC-resources-1of3.zip",
+          "size": 1803718578,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/SMC-resources-1of3.zip",
+          "id": 621718053,
+          "digest": "sha256:4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53"
+        },
+        {
+          "name": "SMC-resources-2of3.zip",
+          "size": 1799284140,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/SMC-resources-2of3.zip",
+          "id": 621729225,
+          "digest": "sha256:a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb"
+        },
+        {
+          "name": "SMC-resources-3of3.zip",
+          "size": 1957663734,
+          "url": "https://github.com/l3al3y/smc-crows-downloads/releases/download/smc-android-20261008-r2/SMC-resources-3of3.zip",
+          "id": 621737684,
+          "digest": "sha256:cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e"
+        }
+      ]
+    }
+  ],
+  "legacy_compatibility_releases": [
+    {
+      "tag": "smc-android-20261008-r2",
+      "id": 406731834,
+      "url": "https://github.com/l3al3y/Portfolio/releases/tag/smc-android-20261008-r2",
+      "assets": [
+        {
+          "name": "APK-verification.json",
+          "size": 5361,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/APK-verification.json",
+          "id": 621603431,
+          "digest": "sha256:99ce5ec5f48592bcb4e22ca78662ce06d67c015fc82be38e9fdbd58046ac1092"
+        },
+        {
+          "name": "PUBLIC-README.md",
+          "size": 5395,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/PUBLIC-README.md",
+          "id": 621603396,
+          "digest": "sha256:1fd109fbafdf8392c6da3e734a3892253779e83f94c8f6208a2feb6ee1d51a4f"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 469,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/SHA256SUMS",
+          "id": 621602728,
+          "digest": "sha256:f3d2d6b1f8fe37a7619d292d5a4841acb3f1b0320c760357f30368dac2dd0e88"
+        },
+        {
+          "name": "SMC-resource-manifest.json",
+          "size": 6777,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/SMC-resource-manifest.json",
+          "id": 621602878,
+          "digest": "sha256:eb2e16f675adf1d990316301146fe940ad6283097e62575f4c1db5bde36cf048"
+        },
+        {
+          "name": "SMC-resources-1of3.zip",
+          "size": 1803718578,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/SMC-resources-1of3.zip",
+          "id": 621574548,
+          "digest": "sha256:4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53"
+        },
+        {
+          "name": "SMC-resources-2of3.zip",
+          "size": 1799284140,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/SMC-resources-2of3.zip",
+          "id": 621585114,
+          "digest": "sha256:a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb"
+        },
+        {
+          "name": "SMC-resources-3of3.zip",
+          "size": 1957663734,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-android-20261008-r2/SMC-resources-3of3.zip",
+          "id": 621594522,
+          "digest": "sha256:cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e"
+        }
+      ]
+    },
+    {
+      "tag": "smc-resources-2080256-r1",
+      "id": 406389826,
+      "url": "https://github.com/l3al3y/Portfolio/releases/tag/smc-resources-2080256-r1",
+      "assets": [
+        {
+          "name": "WITHDRAWN-SMC-resource-mirror-manifest.json",
+          "size": 6649,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-resources-2080256-r1/WITHDRAWN-SMC-resource-mirror-manifest.json",
+          "id": 620658682,
+          "digest": "sha256:3d2c7fb40014d296c6ff6df53fdd7f8655c57508d99f8c8ee3faa7bcef8715d3"
+        },
+        {
+          "name": "WITHDRAWN-SMC-resources-1of3.zip",
+          "size": 1803718578,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-resources-2080256-r1/WITHDRAWN-SMC-resources-1of3.zip",
+          "id": 620631529,
+          "digest": "sha256:4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53"
+        },
+        {
+          "name": "WITHDRAWN-SMC-resources-2of3.zip",
+          "size": 1799284140,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-resources-2080256-r1/WITHDRAWN-SMC-resources-2of3.zip",
+          "id": 620637895,
+          "digest": "sha256:a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb"
+        },
+        {
+          "name": "WITHDRAWN-SMC-resources-3of3.zip",
+          "size": 1957663734,
+          "url": "https://github.com/l3al3y/Portfolio/releases/download/smc-resources-2080256-r1/WITHDRAWN-SMC-resources-3of3.zip",
+          "id": 620651814,
+          "digest": "sha256:cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e"
+        }
+      ]
+    }
+  ],
+  "portfolio_tracked_smc_files": [
+    "smc/index.html"
+  ],
+  "limits": [
+    "Portfolio compatibility resource copies retained for installed clients",
+    "original inputs and sensitive keys/accounts/logs remain locally preserved",
+    "no replacement build or live service change"
+  ]
+}
