@@ -18,9 +18,22 @@ Destination: `Android/data/com.netease.g93na/files/netease/smc/`. Native paths: 
 
 ## Matching downloads
 
-APK download: https://drive.google.com/file/d/1wNCScK6BptW6FiQGngItznr7pG9rnqXK/view
+APK download: https://drive.google.com/file/d/1BDxloM0nYejgW01wrjY9uM9ZM2WzVzdT/view
 
 APK: 2,539,852,614 bytes. SHA-256: `1d42be2fc7992a3fb4c93254890ef9f392fe69776811cf20eeefa9a589db80d3`.
+
+### Google Drive folder download — 10 October 2026
+
+The unchanged r4 APK has been re-uploaded. Prepared APK shortcut folder: https://drive.google.com/drive/folders/1rSfsgBBjxJNyM6C8x75Y7kf93jDxfW95
+
+If Drive reports a quota error, try the following while signed in:
+
+1. Open the APK file and choose Organize → Add shortcut to Drive.
+2. Create a new empty folder in My Drive.
+3. Move the APK shortcut into that folder.
+4. Download the folder itself. Extract the resulting ZIP and verify the APK against the size and SHA-256 above before installation.
+
+You can also open the prepared folder and use the arrow beside its name → Download. Drive may still apply limits: re-uploading does not guarantee a successful download. At publication, the new file's ordinary anonymous transfer returned a quota page; the folder ZIP could not be verified through the connected Chrome session. Direct folder downloads are outside the website's Download APK button counter.
 
 Resources are unchanged from r2 and now hosted in the dedicated public download repository:
 https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-android-20261008-r2
