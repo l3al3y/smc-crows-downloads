@@ -1,17 +1,4 @@
 (() => {
-  const launch = document.querySelector('[data-v1-launch]');
-  if (launch) {
-    const panel = document.createElement('section');
-    panel.className = 'panel v1-manual-play';
-    const heading = document.createElement('h2');
-    heading.textContent = 'Your account. Your choice to play.';
-    const instructions = document.createElement('p');
-    instructions.textContent = 'The v1.0 setup stays open after verification. Use Change account / import backup to select your saved account, confirm replacement when switching, and keep an exported copy of your current account first. The game starts only when you tap Play SMC Crows.';
-    const note = document.createElement('p');
-    note.textContent = 'Account changes require verification before Play becomes available. Ordinary unchanged reopening reuses saved verification. Ready setup checks for signed resource updates in the background. Tap Install resource update when offered.';
-    panel.append(heading, instructions, note);
-    launch.after(panel);
-  }
   const banner = document.querySelector('.announcement');
   if (banner) {
     const button = banner.querySelector('button');
@@ -45,7 +32,7 @@ const resources=[...document.querySelectorAll('[data-v1-resource]')];const note=
 for(const link of resources)link.addEventListener('click',event=>{if(link.getAttribute('aria-disabled')==='true')event.preventDefault();});
 async function refresh(){try{const r=await fetch('/smc/api/release-status',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error();const s=await r.json();
 const ready=s.version==='v1.0'&&s.available===true;button.disabled=!ready;button.setAttribute('aria-disabled',String(!ready));button.textContent=ready?'Download SMC Crows v1.0 APK':'Release checks in progress · downloads locked';
-for(const link of resources){link.setAttribute('aria-disabled',String(!ready));link.tabIndex=ready?0:-1;link.lastElementChild.textContent=ready?'Download ZIP →':'Locked';}
+for(const link of resources){link.setAttribute('aria-disabled',String(!ready));link.tabIndex=ready?0:-1;if(ready)link.setAttribute('href',link.dataset.downloadPath);else link.removeAttribute('href');link.lastElementChild.textContent=ready?'Download ZIP →':'Locked';}
 note.textContent=ready?'v1.0 downloads are available. Use these matching files.':'Downloads remain locked until the scheduled time and final verification.';
-}catch{button.disabled=true;button.setAttribute('aria-disabled','true');for(const link of resources){link.setAttribute('aria-disabled','true');link.tabIndex=-1;}note.textContent='Release status unavailable. Downloads remain locked.';}}
+}catch{button.disabled=true;button.setAttribute('aria-disabled','true');for(const link of resources){link.setAttribute('aria-disabled','true');link.tabIndex=-1;link.removeAttribute('href');}note.textContent='Release status unavailable. Downloads remain locked.';}}
 refresh();setInterval(refresh,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});})();
