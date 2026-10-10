@@ -1,4 +1,17 @@
 (() => {
+  const launch = document.querySelector('[data-v1-launch]');
+  if (launch) {
+    const panel = document.createElement('section');
+    panel.className = 'panel v1-manual-play';
+    const heading = document.createElement('h2');
+    heading.textContent = 'Your account. Your choice to play.';
+    const instructions = document.createElement('p');
+    instructions.textContent = 'The v1.0 setup is being updated to stay open after verification. Use Change account / import backup to select your saved account, confirm replacement when switching, and keep an exported copy of your current account first. The game starts only when you tap Play SMC Crows.';
+    const note = document.createElement('p');
+    note.textContent = 'Account changes require verification before Play becomes available. Ordinary unchanged reopening reuses saved verification. These changes are included in release preparation; final APK validation and public files are pending.';
+    panel.append(heading, instructions, note);
+    launch.after(panel);
+  }
   const banner = document.querySelector('.announcement');
   if (banner) {
     const button = banner.querySelector('button');
