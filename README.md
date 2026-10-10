@@ -8,6 +8,8 @@ Battle-pass v2 restores 114 images; the local working combination is r8 APK plus
 
 Website countdown does not bypass the server-side download lock. Files, counters and previous-release evidence are preserved. The older release documentation below is retained for reference.
 
+Setup will stay open after verification so players can change accounts through a retained account backup. Export the current account first, select Change account / import backup, and confirm replacement if switching. Account changes are verified before Play is available. Players must tap **Play SMC Crows** to start the game; there is no automatic game launch. This Java setup change is part of release preparation; final APK validation and matching public files are pending.
+
 ---
 
 # SMC Crows Android downloads
