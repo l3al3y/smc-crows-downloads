@@ -1,3 +1,15 @@
+# Major Update v1.0 — launch schedule
+
+- Publication preparation: **10 October 2026, 11:35 PM**.
+- Five-hour website countdown: **11 October, 2:00–7:00 AM**.
+- Downloads scheduled to open: **11 October 2026, 7:00 AM**, Malaysia time (UTC+8), after matching-file publication checks pass.
+
+Battle-pass v2 restores 114 images; the local working combination is r8 APK plus a separately imported signed update. Setup adds direct base-pack loading, reuse of matching extensions, saved verification, signed resource import and external account export/import. Final public bundle and exact checksums are pending publication preparation. Keep an external account backup and do not mix older r4 resources with v1.0. The player reports the current combination is running well; no universal FPS/freeze guarantee is established. ANGLE changes are deferred.
+
+Website countdown does not bypass the server-side download lock. Files, counters and previous-release evidence are preserved. The older release documentation below is retained for reference.
+
+---
+
 # SMC Crows Android downloads
 
 Public release: https://irfanfahmi.com/smc/
