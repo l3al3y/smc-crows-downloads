@@ -2,6 +2,11 @@
 
 Public release: https://irfanfahmi.com/smc/
 
+## Downloads temporarily paused — 10 October 2026
+
+MiloSuam has paused website APK and resource downloads because the SMC Crows server is unavailable. The direct APK endpoint also returns HTTP 503. Files, resource assets, phone evidence and download counts are preserved. Downloads remain paused until an explicit reopening announcement. The installation guide below is retained for reference; please wait before installing.
+
+
 # SMC Crows Android r4
 
 **MiloSuam, APK merger/developer and fellow SMC player**
