@@ -29,7 +29,7 @@ Historical gameplay screenshots belong to the earlier r8 APK and battle-pass v2 
 
 If a match freezes, close and reopen the game; the server may return you to the match if your character is still alive. This is a recovery suggestion, not a guaranteed fix for every freeze.
 
-Website downloads open no earlier than **11 October 2026, 7:00 AM Malaysia time**, after final checks. The five-hour countdown runs from 2:00–7:00 AM. If checks fail, downloads remain locked.
+Use the Downloads page for the current server-verified availability of v1.0 and its matching extensions. The launch countdown has ended and has been removed.
 
 ## File identity
 
