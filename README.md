@@ -1,84 +1,44 @@
-# Major Update v1.0 — launch schedule
+# SMC Crows v1.0
 
-- Publication preparation: **10 October 2026, 11:35 PM**.
-- Five-hour website countdown: **11 October, 2:00–7:00 AM**.
-- Downloads scheduled to open: **11 October 2026, 7:00 AM**, Malaysia time (UTC+8), after matching-file publication checks pass.
+Community APK merge by **MiloSuam, APK merger/developer and fellow SMC player**. Original game assets: NetEase Games. Android connection patch: Super Mecha Crows. Pack-loading reference: SMC-Share developer.
 
-Battle-pass v2 restores 114 images; the local working combination is r8 APK plus a separately imported signed update. Setup adds direct base-pack loading, reuse of matching extensions, saved verification, signed resource import and external account export/import. Final public bundle and exact checksums are pending publication preparation. Keep an external account backup and do not mix older r4 resources with v1.0. The player reports the current combination is running well; no universal FPS/freeze guarantee is established. ANGLE changes are deferred.
-
-Website countdown does not bypass the server-side download lock. Files, counters and previous-release evidence are preserved. The older release documentation below is retained for reference.
-
-Setup will stay open after verification so players can change accounts through a retained account backup. Export the current account first, select Change account / import backup, and confirm replacement if switching. Account changes are verified before Play is available. Players must tap **Play SMC Crows** to start the game; there is no automatic game launch. This Java setup change is part of release preparation; final APK validation and matching public files are pending.
-
----
-
-# SMC Crows Android downloads
-
-Public release: https://irfanfahmi.com/smc/
-
-## Downloads temporarily paused — 10 October 2026
-
-MiloSuam has paused website APK and resource downloads because the SMC Crows server is unavailable. The direct APK endpoint also returns HTTP 503. Files, resource assets, phone evidence and download counts are preserved. Downloads remain paused until an explicit reopening announcement. The installation guide below is retained for reference; please wait before installing.
-
-
-# SMC Crows Android r4
-
-**MiloSuam, APK merger/developer and fellow SMC player**
-“I want all players to be able to play this nostalgic game again.”
-Original game: NetEase Games. Community revival connection kit: Super Mecha Crows.
+The engine, game scripts and base packs retain the working r8 payloads. The v1.0 APK bundles the cumulative resource overlay: 114 battle-pass artwork replacements and 30 limited pilot texture aliases. This does not establish that every missing pilot/mecha skin or preview control has been fixed.
 
 ## Install and play
 
-1. Install `SMC-Crows.apk`. Keep the existing community app installed when updating: the signing certificate is unchanged, and account files are preserved.
-2. First setup downloads and verifies the three matching Android resource ZIPs, extracts all 22 NPKs, and preserves the original-first-start then Crows patch sequence. Wi-Fi, pause/retry and offline ZIP import remain supported. No Termux or manual Android folder copying is needed.
-3. After full setup, reopening checks the saved resource state and automatically opens the game. Full hashing/extraction runs only when needed for setup, an APK update, changed/missing resources or manual repair. Use “Stay in setup / verify and repair resources” for a full check.
+1. Keep 20–26 GB free before setup, depending on the phone. Allow extra room if retaining earlier resources for rollback. The previously reported 18.27 GB installed total belongs to an older build; the v1.0 installed total has not been measured on every device.
+2. Export a private account backup outside `Android/data` before uninstalling or clearing game data. For a compatible community install, update over it using the same signing certificate. Do not uninstall merely to update.
+3. Install the complete `SMC-Crows-v1.0.apk` from the website. Raw `.assembly-*.bin` files are hosting parts and cannot be installed.
+4. Open setup. Matching installed extensions are reused; missing extensions download automatically over Wi-Fi. Use mobile data only after choosing that option. For offline setup, import all three matching `SMC-r8-extensions` ZIPs; their retained names identify the correct resource set for v1.0.
+5. On a fresh install, use setup to start the original game once, then return and apply Crows. If the original verification server fails, follow the explicit continuation choice; a failed connection is not a completed original update.
+6. Import your retained account if needed. Wait until setup is ready, then tap **Play SMC Crows**. Setup stays open for account management and never starts the game automatically.
 
-Destination: `Android/data/com.netease.g93na/files/netease/smc/`. Native paths: `res_patch/<unsigned hash % 1023>/<unsigned hash>`. Account files stay separate.
+Setup writes resources under `Android/data/com.netease.g93na/files/netease/smc/`. No Termux or manual copying is required. Unchanged reopening uses saved verification; changed or missing files, APK upgrades and manual repair may require full checks.
 
-## Matching downloads
+## Future resource updates
 
-APK download: https://irfanfahmi.com/smc/downloads/ (Download APK button)
+Ready setup checks the signed online channel in the background. When a compatible newer resource bundle is available, tap **Install resource update**. The check itself does not install anything or prevent playing an already verified game if the network is unavailable. A valid signed bundle must match this resource base. Compatible model/texture/artwork updates can use this path; engine, setup and APK changes still require an APK update. Older public r4 clients need a one-time compatible APK migration to obtain these features.
 
-Direct APK: https://irfanfahmi.com/smc/api/apk-file/SMC-Crows-r4.apk
+Keep account backup JSON private. App-owned account copies may disappear on uninstall or a full data wipe; recovery requires a surviving exported backup and a functioning server. Do not share that backup.
 
-APK: 2,539,852,614 bytes. SHA-256: `1d42be2fc7992a3fb4c93254890ef9f392fe69776811cf20eeefa9a589db80d3`.
+## Known limits and evidence
 
-### Guarded Cloudflare download — 10 October 2026
+Some missing skins and the Lucky Draw/Chromatic Ball preview controls remain unresolved. This game is playable but still imperfect. MiloSuam merges available resources and does not create missing original assets. If you have a complete compatible resource set, contact **cabalme4@gmail.com**.
 
-The unchanged full r4 APK is served from a private Cloudflare R2 bucket through our domain. There is no public bucket URL bypassing the guard. Standard Android/browser downloads and single-range resume are supported.
+Historical gameplay screenshots belong to the earlier r8 APK and battle-pass v2 overlay. They are not proof of exact v1.0 gameplay. On the exact v1.0 installation, APK/resource hashes and account retention passed. After the requested lobby/battle-pass/match dash/jump comparison, the player reported “all good, no freeze.” This does not prove every skin, every phone or full-match duration. Final public-host checks are separate.
 
-Abuse protection limits requests to 30 per minute per visitor at each Cloudflare location. A separate atomic global quota allows at most 10,000 APK storage-read attempts per UTC day and 250,000 per UTC month. Every range/retry/failed storage read consumes a reservation. Downloads pause at the cap, or if protection dependencies fail. HEAD metadata checks do not read the APK from storage. Avoid parallel download accelerators.
+If a match freezes, close and reopen the game; the server may return you to the match if your character is still alive. This is a recovery suggestion, not a guaranteed fix for every freeze.
 
-Service quota: https://irfanfahmi.com/smc/api/apk-quota
+Website downloads open no earlier than **11 October 2026, 7:00 AM Malaysia time**, after final checks. The five-hour countdown runs from 2:00–7:00 AM. If checks fail, downloads remain locked.
 
-These delivery protections are not an account-wide billing cap or a promise of lifetime-free hosting. The public button counter is preserved and still measures requests, not completed transfers or unique players. Direct file requests are outside that button count.
-
-Resources are unchanged from r2 and now hosted in the dedicated public download repository:
-https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-android-20261008-r2
+## File identity
 
 | File | Bytes | SHA-256 |
-| --- | ---: | --- |
-| `SMC-resources-1of3.zip` | 1,803,718,578 | `4e17124223155fbe16a72f430060511977349ee1a63e90c71cddfa2f5695ea53` |
-| `SMC-resources-2of3.zip` | 1,799,284,140 | `a000b1b0a5cd2413c58776898ddc71fa7f6affa672a58e320da063e5bdd069cb` |
-| `SMC-resources-3of3.zip` | 1,957,663,734 | `cf2291748b7fa70dc8d494b2aadd63202996614e826f641a333c4ddb2753458e` |
+|---|---:|---|
+| SMC-Crows-v1.0.apk | 4,234,206,049 | `7ba44195c7247b132359ec7023f7578b24fa273c65b182600cf053c106f72ba7` |
+| SMC-resource-update-v3.zip | 45,128,218 | `60d2b51209e44da9039c8532a246b593d3ce8f354d7c58286e2788404624667d` |
+| SMC-r8-extensions-1of3.zip | 1,251,668,090 | `0775d29f32a526bb69b5bb5d8615ee18bfd15776ecc6dce3f490dd3ade477717` |
+| SMC-r8-extensions-2of3.zip | 1,404,952,194 | `6c905a5c3362d0b16a943ac3961e89f6a8420e9965397bec3dd4d6179fff0053` |
+| SMC-r8-extensions-3of3.zip | 1,246,703,828 | `a1a410a977740629915be3a3d2b90145b16b868364d46acfe69259ed467cbff1` |
 
-About 5.56 GB downloaded resources and 9.62 GB decoded resources, plus APK installation and temporary staging space. Setup calculates remaining space from actual verified/partial files. The APK is not a single file containing the entire external resource bundle.
-
-## Verified behavior and phone evidence
-
-All 1,874 non-setup APK payload hashes, native engine, scripts, resources and manifest remain unchanged from published r2. Only setup `classes8.dex` changed. The six setup/import/download/receipt/patch integrity host suites, complete ZIP CRC, signature certificate and alignment checks passed.
-
-The preceding r3 setup candidate automatically reopened on Samsung S26 Ultra / Android 16 in 6.344 seconds. The player reported no further freeze after the graphics comparison and tested 30/45/60/90/120 FPS. The session started with Energy Saving/Low resolution/Low mecha effects; graphics were subsequently adjusted by the player. This is observed phone behavior, not an identified native engine fix. r4 adds only the verified resource-host URL change to that setup code. The exact r4 APK was installed, completed its full update verification, reached login and the textured lobby, and reopened the game in 6.312 seconds without repeating the full scan. The 6.312-second measure ends when the game activity opens; it is not the total login time.
-
-If a dash freeze occurs on your device, the successful diagnostic profile used Energy Saving, Low resolution, Low mecha effects, AA off, shadows off and HDR off. FPS was subsequently player-tested at all five selectable rates; the release does not force a 30 FPS cap or change global GPU settings. Other devices, complete-match stability, every pilot/skin and battle-pass screen are not established by this single phone session.
-
-Ordinary reopen uses complete pinned file size/time/inventory/build checks plus actual patch verification. Deliberately same-size corruption with preserved timestamps requires the manual full SHA verification. Successful install/update/repair still hashes every pinned resource.
-
-## Source, evidence and APK count
-
-Website: https://irfanfahmi.com/smc/
-Public downloads: https://github.com/l3al3y/smc-crows-downloads
-Private development source: https://github.com/l3al3y/smc-crows-source
-
-Screenshots are tied to their recorded APK hashes; older-build pictures remain labeled. APK count measures button requests, not completed downloads or unique players. Existing counts and original artifacts are preserved. Raw phone logs/accounts/signing credentials are excluded from distribution.
-
+The bundled v3 update is already included in the APK. It is separately available for compatible signed-update import and recovery; it is not a replacement for the three extension ZIPs.
