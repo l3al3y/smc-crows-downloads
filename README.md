@@ -1,3 +1,5 @@
+> **12 October 2026 — Website downloads paused:** Game resource data is being checked. APK/resource website downloads resume only after verification and a reopening announcement. Existing v1.0 players: once the approved resource patch is released, open Setup → **Check for resource updates** → **Install resource update**. Compatible resource-only patches do not need the full APK again. Older APKs may need a one-time Setup upgrade. The next patch is not yet publicly available.
+
 # SMC Crows v1.0
 
 Community APK merge by **MiloSuam, APK merger/developer and fellow SMC player**. Original game assets: NetEase Games. Android connection patch: Super Mecha Crows. Pack-loading reference: SMC-Share developer.
