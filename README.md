@@ -6,7 +6,7 @@ The engine, game scripts and base packs retain the working r8 payloads. The v1.0
 
 ## Install and play
 
-1. Keep 20–26 GB free before setup, depending on the phone. Allow extra room if retaining earlier resources for rollback. The previously reported 18.27 GB installed total belongs to an older build; the v1.0 installed total has not been measured on every device.
+1. Keep 10–15 GB free before downloading and setup for a safer installation. Allow extra room if keeping downloaded ZIPs or rollback resources. The player reports 8.42 GB total installed SMC storage on their Samsung S26 Ultra with v1.0, down from 18.27 GB on the older build. Installed storage can vary by phone.
 2. Export a private account backup outside `Android/data` before uninstalling or clearing game data. For a compatible community install, update over it using the same signing certificate. Do not uninstall merely to update.
 3. Install the complete `SMC-Crows-v1.0.apk` from the website. Raw `.assembly-*.bin` files are hosting parts and cannot be installed.
 4. Open setup. Matching installed extensions are reused; missing extensions download automatically over Wi-Fi. Use mobile data only after choosing that option. For offline setup, import all three matching `SMC-r8-extensions` ZIPs; their retained names identify the correct resource set for v1.0.
