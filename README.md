@@ -42,3 +42,7 @@ Use the Downloads page for the current server-verified availability of v1.0 and 
 | SMC-r8-extensions-3of3.zip | 1,246,703,828 | `a1a410a977740629915be3a3d2b90145b16b868364d46acfe69259ed467cbff1` |
 
 The bundled v3 update is already included in the APK. It is separately available for compatible signed-update import and recovery; it is not a replacement for the three extension ZIPs.
+
+## v1.0 video walkthroughs — 11 October 2026
+
+Community recordings by MiloSuam: [installation and setup](https://irfanfahmi.com/smc/setup/#setup-video) and [account backup/change](https://irfanfahmi.com/smc/setup/#account-video). Native players with direct MP4 links. Keep 10–15 GB free before setup; keep account-backup JSON files private and outside app-owned storage. Setup waits for manual Play. The original first-start verification failure in the recording is an explicit continuation, not a completed original-server update. Videos are walkthroughs, not exact installed-APK or complete-match evidence. Older r4 footage retains its historical attribution.
