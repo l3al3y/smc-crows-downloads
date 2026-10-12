@@ -1,5 +1,3 @@
-> **12 October 2026 — Website downloads paused:** Game resource data is being checked. APK/resource website downloads resume only after verification and a reopening announcement. Existing v1.0 players: once the approved resource patch is released, open Setup → **Check for resource updates** → **Install resource update**. Compatible resource-only patches do not need the full APK again. Older APKs may need a one-time Setup upgrade. The next patch is not yet publicly available.
-
 # SMC Crows v1.0
 
 Community APK merge by **MiloSuam, APK merger/developer and fellow SMC player**. Original game assets: NetEase Games. Android connection patch: Super Mecha Crows. Pack-loading reference: SMC-Share developer.
@@ -37,7 +35,7 @@ Use the Downloads page for the current server-verified availability of v1.0 and 
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
-| SMC-Crows-v1.0.apk | 4,234,206,049 | `7ba44195c7247b132359ec7023f7578b24fa273c65b182600cf053c106f72ba7` |
+| SMC-Crows-v1.0.apk | 4,237,843,753 | `1af1338ca1a27a5090de902026537e0ce1b95917ebeda93ba1a8e83481d23708` |
 | SMC-resource-update-v3.zip | 45,128,218 | `60d2b51209e44da9039c8532a246b593d3ce8f354d7c58286e2788404624667d` |
 | SMC-r8-extensions-1of3.zip | 1,251,668,090 | `0775d29f32a526bb69b5bb5d8615ee18bfd15776ecc6dce3f490dd3ade477717` |
 | SMC-r8-extensions-2of3.zip | 1,404,952,194 | `6c905a5c3362d0b16a943ac3961e89f6a8420e9965397bec3dd4d6179fff0053` |
@@ -48,3 +46,10 @@ The bundled v3 update is already included in the APK. It is separately available
 ## v1.0 video walkthroughs — 11 October 2026
 
 Community recordings by MiloSuam: [installation and setup](https://irfanfahmi.com/smc/setup/#setup-video) and [account backup/change](https://irfanfahmi.com/smc/setup/#account-video). Native players with direct MP4 links. Keep 10–15 GB free before setup; keep account-backup JSON files private and outside app-owned storage. Setup waits for manual Play. The original first-start verification failure in the recording is an explicit continuation, not a completed original-server update. Videos are walkthroughs, not exact installed-APK or complete-match evidence. Older r4 footage retains its historical attribution.
+
+
+## Setup update — 12 October 2026
+
+Install this same-signer APK once over the compatible existing game; export a private account backup first. Play remains manual and enabled after a failed optional Check for updates. Current account is retained; explicit import changes accounts. The redesigned Setup has translucent cards, seated community Riko, a locally generated “Are you ready to play?” greeting with guarded touch replay, and offline Privacy/Terms/Copyright notices. Synthetic voice and fan art are not official performer/gameplay evidence.
+
+Compatible resources and supported layout/background patches can subsequently use signed Setup updates. This Java/code change requires an APK upgrade; Check alone does not install patches. Matching three r8 extension ZIPs and bundled cumulative v3 remain unchanged. Exact2080307 APK tested on Samsung S26 Ultra: MiloSuam reported greeting/login/lobby/battle pass/match all worked normally. Other phones and missing assets remain unverified.
