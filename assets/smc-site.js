@@ -18,9 +18,9 @@
   fetch('/smc/api/apk-stat', {cache:'no-store', credentials:'omit', signal:controller.signal})
     .then(r => { if (!r.ok) throw Error(); return r.json(); })
     .then(d => {
-      if (d.version !== 'smc-crows-v1.0-20261011' || !Number.isSafeInteger(d.starts) || d.starts < 0 || !Number.isSafeInteger(d.previous_r4) || !Number.isSafeInteger(d.previous_r2) || !Number.isSafeInteger(d.historical_v4)) throw Error();
+      if (d.version !== 'smc-crows-v1.0-setup-20261012' || !Number.isSafeInteger(d.starts) || d.starts < 0 || !Number.isSafeInteger(d.previous_r4) || !Number.isSafeInteger(d.previous_r2) || !Number.isSafeInteger(d.historical_v4)) throw Error();
       count.textContent = new Intl.NumberFormat().format(d.starts);
-      status.textContent = 'v1.0 APK button requests since 11 October 2026. Previous r4: ' + d.previous_r4 + '; r2: ' + d.previous_r2 + '; v4: ' + d.historical_v4 + '.';
+      status.textContent = 'This Setup update: APK button requests since 12 October 2026. Previous v1.0: ' + d.previous_v1 + '; r4: ' + d.previous_r4 + '; r2: ' + d.previous_r2 + '; v4: ' + d.historical_v4 + '.';
     })
     .catch(() => { status.textContent = 'APK count temporarily unavailable.'; })
     .finally(() => clearTimeout(timeout));
