@@ -34,6 +34,6 @@ function render(ready,message){if(button){button.disabled=!ready;button.setAttri
 for(const link of resources){link.setAttribute('aria-disabled',String(!ready));link.tabIndex=ready?0:-1;if(ready)link.setAttribute('href',link.dataset.downloadPath);else link.removeAttribute('href');link.lastElementChild.textContent=ready?'Download ZIP →':'Unavailable';}
 for(const note of notes)note.textContent=message;}
 async function refresh(){try{const r=await fetch('/smc/api/release-status',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error();const s=await r.json();
-const ready=s.version==='v1.0'&&s.available===true;render(ready,ready?'v1.0 with the improved Setup is available. Update over your compatible installation; keep your account backup.':'Downloads are temporarily unavailable while release checks complete.');
+const ready=s.version==='v1.0'&&s.available===true;render(ready,ready?'v1.0 with the improved Setup is available. Update over your compatible installation; keep your account backup.':'Public downloads are paused while v2.0 compatibility and the reported Firefox freeze are checked. Reopening will be announced here.');
 }catch{render(false,'Release status unavailable. Please retry shortly.');}}
 refresh();setInterval(refresh,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});})();

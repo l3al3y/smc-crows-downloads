@@ -1,3 +1,5 @@
+> Public APK/resource download routes paused on13October2026 for private compatibility and Firefox-freeze testing of the v2.0 candidate. The new APK is not publicly released. Existing players can continue using their installed game. Reopen only after MiloSuam explicitly authorizes publication.
+
 # SMC Crows v1.0
 
 Community APK merge by **MiloSuam, APK merger/developer and fellow SMC player**. Original game assets: NetEase Games. Android connection patch: Super Mecha Crows. Pack-loading reference: SMC-Share developer.
