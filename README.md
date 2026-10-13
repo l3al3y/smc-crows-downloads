@@ -45,7 +45,7 @@ The bundled v3 update is already included in the APK. It is separately available
 
 ## Current video guides —13 October 2026
 
-Three user-supplied videos now have separate short pages: [install and setup](https://irfanfahmi.com/smc/tutorials/setup/), [save/recover accounts in latest Setup](https://irfanfahmi.com/smc/tutorials/accounts/), and [advanced legacy recovery](https://irfanfahmi.com/smc/tutorials/old-backup/). Native controls, small players, full-screen and MP4 links. Current APK/resources/counters/quotas unchanged. Legacy web video covers visible device/network/debug identifiers and unlock input while retaining its complete timeline/audio/end credits; originals remain local. Use built-in account export/import first; preserve a private external backup before uninstalling.
+Three user-supplied videos now have separate short pages: [install and setup](https://irfanfahmi.com/smc/tutorials/setup/), [save/recover accounts in latest Setup](https://irfanfahmi.com/smc/tutorials/accounts/), and [advanced legacy recovery](https://irfanfahmi.com/smc/tutorials/old-backup/). Native controls, small players, full-screen and MP4 links. Current APK/resources/counters/quotas unchanged. The old-APK recovery tutorial now uses the exact original video without censorship, cuts, remuxing or re-encoding, as requested. Video maker: タクミ (Discord: takumi_sv). Local originals are preserved. Use built-in account export/import first; preserve a private external backup before uninstalling.
 
 ## Setup update — 12 October 2026
 
