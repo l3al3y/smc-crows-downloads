@@ -18,9 +18,10 @@
   fetch('/smc/api/apk-stat', {cache:'no-store', credentials:'omit', signal:controller.signal})
     .then(r => { if (!r.ok) throw Error(); return r.json(); })
     .then(d => {
-      if (d.version !== 'smc-crows-v1.0-setup-20261012' || !Number.isSafeInteger(d.starts) || d.starts < 0 || !Number.isSafeInteger(d.previous_r4) || !Number.isSafeInteger(d.previous_r2) || !Number.isSafeInteger(d.historical_v4)) throw Error();
+      if (d.version !== 'smc-crows-v2.0-stable-20261014' || !Number.isSafeInteger(d.starts) || d.starts < 0 || !Number.isSafeInteger(d.previous_r4) || !Number.isSafeInteger(d.previous_r2) || !Number.isSafeInteger(d.historical_v4)) throw Error();
       count.textContent = new Intl.NumberFormat().format(d.starts);
-      status.textContent = 'Retained APK button requests since 12 October 2026, including the previous Setup release. Previous v1.0: ' + d.previous_v1 + '; r4: ' + d.previous_r4 + '; r2: ' + d.previous_r2 + '; v4: ' + d.historical_v4 + '.';
+      for(const cell of document.querySelectorAll('[data-counter]')) { const value=d[cell.dataset.counter]; if(!Number.isSafeInteger(value)||value<0)throw Error();cell.textContent=new Intl.NumberFormat().format(value); }
+      status.textContent = 'Live counts. v2.0 requests since 14 October 2026; earlier releases shown separately.';
     })
     .catch(() => { status.textContent = 'APK count temporarily unavailable.'; })
     .finally(() => clearTimeout(timeout));

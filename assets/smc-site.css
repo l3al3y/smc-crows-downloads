@@ -26,3 +26,5 @@ img{height:auto}.small-setup-preview img{width:min(100%,145px);height:auto;max-h
 
 /* Balanced phone navigation and a smaller announcement strip. */
 .compact-announcement .announcement-head{padding:9px 12px;min-height:0}.compact-announcement .announcement-copy{padding:12px 14px;margin:0;line-height:1.5}@media(max-width:700px){.header-inner nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.header-inner nav a{text-align:center;padding:8px 5px}.compact-announcement{margin-top:17px}.compact-announcement .announcement-copy{font-size:.72rem;padding:10px 12px}.compact-announcement .announcement-head h2{font-size:.58rem}.compact-announcement .announcement-toggle{font-size:.62rem}.compact-announcement .announcement-head{padding:8px 10px}}
+
+.download-count-table{width:100%;border-collapse:collapse;text-align:left;font-size:.95rem}.download-count-table th,.download-count-table td{padding:.7rem .5rem;border-bottom:1px solid #354640}.download-count-table td{text-align:right;font-variant-numeric:tabular-nums}.download-count-table tbody th{font-weight:400}.download-count-table strong{font-size:1.25rem;color:#d4ed95}
