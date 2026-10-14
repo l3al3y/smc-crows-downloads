@@ -41,3 +41,113 @@ img{height:auto}.small-setup-preview img{width:min(100%,145px);height:auto;max-h
 @media(max-width:640px){.download-heading{padding:34px 0 23px}.airy-download-layout{grid-template-columns:1fr;gap:28px;margin-bottom:30px}.apk-card-top{margin-bottom:22px}.apk-download-card{padding:24px}.download-prep{padding:0 3px}.download-prep>h2{font-size:1.1rem;margin-bottom:18px}.download-prep-item{margin-bottom:17px}.download-prep-item p{max-width:none}.downloads-count{padding:22px 18px}.downloads-count .download-count-table th,.downloads-count .download-count-table td{padding:11px 5px}.download-bottom{grid-template-columns:1fr;gap:8px}.download-bottom-links{padding-top:0}.downloads-count .counter-motion-toggle{float:none}.downloads-count #smc-apk-counter-status{padding-right:0}.downloads-count .counter-heading h2{font-size:1.05rem}.apk-facts{justify-content:flex-start;gap:36px}}
 
 .download-quota-note{font-size:.73rem;line-height:1.65;color:#aebdb0;margin:0 0 22px;padding-top:14px;border-top:1px solid #293c2f}.download-quota-note strong{font-weight:550;color:#cbdac2}.download-quota-note a{white-space:nowrap}
+
+/* Nightfall community website. Presentation only; release controls stay server-side. */
+:root{--bg:#090d14;--panel:#111b29;--line:#2d3e55;--ink:#eef3fa;--muted:#a7b8cd;--lime:#8de4ed;--gold:#f0c782;--accent:#d8314b}
+body.nightfall-smc{background:var(--bg);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;line-height:1.75}
+.nightfall-smc .wrap{width:min(1120px,calc(100% - 48px))}
+.nightfall-smc a:hover{color:#fff}
+.nightfall-smc a:focus-visible,.nightfall-smc button:focus-visible,.nightfall-smc summary:focus-visible{outline:2px solid #8de4ed;outline-offset:5px}
+.nightfall-smc h1,.nightfall-smc h2,.nightfall-smc h3{letter-spacing:-.035em}
+.nightfall-smc .site-header{background:#090d14f5;border-color:#26364b;position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}
+.nightfall-smc .header-inner{width:min(1200px,calc(100% - 48px));min-height:88px;gap:20px;flex-wrap:nowrap}
+.nightfall-smc .brand{gap:12px;flex-shrink:0}
+.nightfall-smc .nightfall-emblem{width:45px;height:45px;object-fit:contain}
+.nightfall-smc .brand-detail{font:750 16px/1.2 "Segoe UI",Arial,sans-serif;letter-spacing:1.6px;color:#eef3fa}
+.nightfall-smc .brand-detail>span{font-size:8px;font-weight:600;letter-spacing:1.8px;color:#92a8c1;margin-top:6px}
+.nightfall-smc nav{gap:3px}
+.nightfall-smc nav a{font-size:12px;padding:9px 11px;color:#a7b8cd;min-height:42px;display:flex;align-items:center}
+.nightfall-smc nav a:hover,.nightfall-smc nav a[aria-current]{color:#ff9aac;background:#2b202e;font-weight:600}
+.nightfall-smc .portfolio-link{font-size:11px;border:1px solid #34445a;border-radius:6px;padding:10px 12px;color:#c1cede}
+.nightfall-smc .eyebrow{color:#8de4ed;font-size:10px;letter-spacing:2px;font-family:"Segoe UI",Arial,sans-serif;font-weight:650;margin-bottom:14px}
+.nightfall-smc .button{background:#152031;border:1px solid #3b4d65;color:#eef3fa;font-size:13px;border-radius:7px;min-height:48px;padding:14px 20px}
+.nightfall-smc .button.primary{background:var(--accent);border-color:#ee637b;color:#fff;box-shadow:0 5px 25px #d8314b16}
+.nightfall-smc .button.primary:hover{background:#bd243d;border-color:#ee637b;color:#fff}
+.nightfall-smc .button:hover{background:#1c2c41;border-color:#6f8dae;color:#fff}
+.nightfall-smc .button:disabled,.nightfall-smc .button[aria-disabled="true"]{opacity:.65;cursor:not-allowed}
+.nightfall-smc .announcement{background:#111b29;border-color:#34465c;border-radius:9px;margin-top:24px}
+.nightfall-smc .announcement-head{border-color:#2d3e55}
+.nightfall-smc .announcement-copy{color:#b9c9db;font-size:12px}
+.nightfall-smc .announcement-head h2{color:#8de4ed}
+.nightfall-smc .announcement-toggle{border-color:#425875;background:#18243a;color:#eef3fa;border-radius:5px}
+.nightfall-smc .nightfall-hero{position:relative;isolation:isolate;min-height:490px;margin-top:24px;border:1px solid #2b3c51;border-radius:12px;overflow:hidden;background:linear-gradient(90deg,#090d14f5 3%,#090d14db 43%,#090d1420),url('/smc/assets/nightfall-hero.webp') 76% center/cover;padding:65px 40px;display:flex;align-items:center}
+.nightfall-smc .nightfall-hero-copy{position:relative;max-width:760px}
+.nightfall-smc .nightfall-hero h1{font-size:clamp(38px,4.4vw,60px);font-weight:800;line-height:1.08;margin:20px 0 25px;letter-spacing:-1.8px}
+.nightfall-smc .nightfall-hero h1 span{color:#b8c7da}
+.nightfall-smc .nightfall-hero .lead{font-size:15px;max-width:460px;color:#b5c7dc;line-height:1.85}
+.nightfall-smc .nightfall-hero .actions{margin:27px 0 30px}
+.nightfall-smc .nightfall-hero .nightfall-facts{display:flex;flex-wrap:wrap;gap:14px 20px;color:#91a7c1;font-size:9px;letter-spacing:.9px}
+.nightfall-smc .nightfall-launch{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;margin:24px 0 42px;padding:28px 32px;border:1px solid #34465c;border-radius:12px;background:linear-gradient(105deg,#131e2e,#101824)}
+.nightfall-smc .nightfall-launch h2{font-size:25px;margin-bottom:10px;line-height:1.2}
+.nightfall-smc .nightfall-launch p{font-size:12px;line-height:1.8;margin-bottom:8px}
+.nightfall-smc .nightfall-launch .eyebrow{font-size:9px;margin-bottom:10px}
+.nightfall-smc .nightfall-countdown{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:16px}
+.nightfall-smc .nightfall-countdown>div{flex:1;text-align:center}
+.nightfall-smc .nightfall-countdown strong{font-size:38px;line-height:1.2;font-weight:650;font-variant-numeric:tabular-nums}
+.nightfall-smc .nightfall-countdown span{display:block;font-size:8px;letter-spacing:1.2px;color:#8aa0bc;margin-top:5px}
+.nightfall-smc .nightfall-countdown b{color:#667d99;font-size:19px}
+.nightfall-smc .nightfall-launch-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap;justify-content:center}
+.nightfall-smc .nightfall-launch-actions .button{min-height:42px;padding:9px 15px;font-size:11px}
+.nightfall-smc .nightfall-lock{font-size:10px;color:#9eb2cc}
+.nightfall-smc #countdown-status{color:#8de4ed;font-size:10px}
+.nightfall-smc .mecha-home{border:1px solid #2a3a50;border-radius:12px;padding:28px;background:#101925;gap:24px}
+.nightfall-smc .mecha-scene{background:radial-gradient(ellipse at center,#223c50,#101925);border-color:#34465c}
+.nightfall-smc .mecha-caption{background:#121e2e;border-color:#34465c;color:#b6c6da}
+.nightfall-smc .mecha-caption>span{color:#8de4ed}
+.nightfall-smc .release-facts{background:#121d2d;border-color:#34465c;color:#a7b8cd;padding:22px;border-radius:9px}
+.nightfall-smc .release-facts strong{color:#eef3fa}
+.nightfall-smc .page-heading,.nightfall-smc .download-heading{max-width:none;padding:46px 0 28px}
+.nightfall-smc .page-heading h1,.nightfall-smc .download-heading h1{font-size:clamp(32px,4.5vw,52px);font-weight:750;line-height:1.1;margin-bottom:18px}
+.nightfall-smc .page-heading .lead{font-size:14px;max-width:700px;color:#a7b8cd}
+.nightfall-smc .download-heading{margin-top:24px;padding:36px 32px;border-radius:12px;border:1px solid #34465c;background:linear-gradient(90deg,#111b29 40%,#111b29c7),url('/smc/assets/nightfall-hero.webp') 82% 46%/cover;margin-bottom:24px}
+.nightfall-smc .download-heading h1{font-size:clamp(31px,4vw,46px)}
+.nightfall-smc :is(.panel,.notice,.feature-card,.quick-link,.tutorial-card,.photo-card,.file-row,.counter-panel,.short-steps,.download-file-details){background:#101925;border-color:#2d3e55;border-radius:10px;box-shadow:none}
+.nightfall-smc .panel{padding:28px}
+.nightfall-smc .panel h2,.nightfall-smc .notice h2{font-size:25px;line-height:1.2}
+.nightfall-smc .panel p,.nightfall-smc .notice p{font-size:13px;line-height:1.9}
+.nightfall-smc .quick-links{gap:16px;margin-block:32px}
+.nightfall-smc .quick-link{padding:25px;transition:background .2s,border-color .2s,transform .2s}
+.nightfall-smc .quick-link strong{font-size:16px;line-height:1.4;color:#eef3fa}
+.nightfall-smc .quick-link>span{font-size:12px;color:#9eb1ca;line-height:1.8}
+.nightfall-smc .quick-link:hover{background:#152237;border-color:#7494b4;transform:translateY(-2px)}
+.nightfall-smc .quick-link strong span,.nightfall-smc .card-arrow{color:#8de4ed}
+.nightfall-smc .feature-card h3{font-size:20px}
+.nightfall-smc .feature-card p{font-size:13px}
+.nightfall-smc .warning{border-color:#665139;background:#201c19}
+.nightfall-smc .warning .eyebrow{color:#f0c782}
+.nightfall-smc .apk-download-card,.nightfall-smc .download-panel{background:linear-gradient(130deg,#182435,#0f1826);border:1px solid #52657e;border-radius:12px;box-shadow:none;padding:32px}
+.nightfall-smc .apk-release-pill,.nightfall-smc .release-tag,.nightfall-smc .counter-badge{background:#263044;color:#a2e6ed;border-color:#475875}
+.nightfall-smc .apk-download-card h2{font-size:38px}
+.nightfall-smc .apk-download-card h2 span{color:#8de4ed}
+.nightfall-smc .apk-facts,.nightfall-smc .apk-card-links,.nightfall-smc .counter,.nightfall-smc .specs>div{border-color:#34465c}
+.nightfall-smc .apk-facts dd{color:#eef3fa}
+.nightfall-smc .download-prep{padding:28px 26px;background:#101925;border:1px solid #2d3e55;border-radius:12px}
+.nightfall-smc .download-prep h2{font-size:24px}
+.nightfall-smc .download-prep h3{font-size:16px}
+.nightfall-smc .download-prep p{font-size:12px;line-height:1.85}
+.nightfall-smc .prep-number{background:#1c2d42;border-color:#415675;color:#b4dbe2}
+.nightfall-smc .download-quota-note{background:#172235;color:#a7b8cd;border-color:#374b67;border-radius:7px}
+.nightfall-smc .download-quota-note strong{color:#d8e3f2}
+.nightfall-smc .counter-live,.nightfall-smc .counter-badge{color:#8de4ed}
+.nightfall-smc .live-dot,.nightfall-smc .status-dot{background:#8de4ed;box-shadow:none}
+.nightfall-smc .download-count-table th,.nightfall-smc .download-count-table td{border-color:#2d3e55}
+.nightfall-smc .counter-bar{background:#223149}
+.nightfall-smc .counter-bar i{background:linear-gradient(90deg,#d8314b,#8de4ed)}
+.nightfall-smc .download-count-table .current-release{background:#172335}
+.nightfall-smc .motion-toggle{border-color:#425875;color:#b9c9dd;background:#172237;border-radius:6px}
+.nightfall-smc .tutorial-video,.nightfall-smc .tutorial-figure,.nightfall-smc .small-setup-preview{border-color:#34465c;background:#0c1420}
+.nightfall-smc .tutorial-notes h2{font-size:26px}
+.nightfall-smc .tutorial-notes p{font-size:13px;line-height:1.9}
+.nightfall-smc .short-list li,.nightfall-smc .step{border-color:#2d3e55}
+.nightfall-smc .step-number{border-color:#506784;color:#8de4ed;background:#17253a}
+.nightfall-smc .hash{background:#0c1420;color:#8de4ed;border-color:#34465c;overflow-wrap:anywhere}
+.nightfall-smc .site-footer{background:#090d14;border-color:#26364b;padding:32px 0;margin-top:48px}
+.nightfall-smc .footer-brand{font-size:15px;letter-spacing:1px;color:#eef3fa}
+.nightfall-smc .footer-inner p{font-size:11px;color:#849ab5;line-height:1.9}
+.nightfall-smc .footer-links a{font-size:10px;color:#97aec8}
+.nightfall-smc .footer-links a:hover{color:#8de4ed}
+@media(min-width:1000px){.nightfall-smc .nightfall-hero{width:calc(100% + 80px);margin-left:-40px;border-radius:0;min-height:520px;padding-inline:40px}.nightfall-smc .nightfall-hero:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#090d1450,transparent 50%);z-index:-1}}
+@media(max-width:1100px){.nightfall-smc .header-inner{gap:14px;min-height:82px}.nightfall-smc .brand-detail{font-size:14px}.nightfall-smc .nightfall-emblem{width:38px;height:38px}.nightfall-smc nav a{font-size:11px;padding:9px 8px}.nightfall-smc .portfolio-link{padding:9px}}
+@media(max-width:850px){.nightfall-smc .header-inner{display:grid;grid-template-columns:1fr auto;gap:8px 18px;padding:13px 0;width:calc(100% - 36px)}.nightfall-smc .header-inner nav{grid-column:1/-1;grid-row:2;display:flex;flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:2px;scrollbar-width:thin;gap:2px}.nightfall-smc .portfolio-link{grid-column:2;grid-row:1;justify-self:end}.nightfall-smc .header-inner nav a{flex-shrink:0;font-size:11px;min-height:38px;padding:8px 10px}.nightfall-smc .nightfall-launch{grid-template-columns:1fr;gap:22px;padding:26px}.nightfall-smc .nightfall-launch-right{width:100%;max-width:450px}.nightfall-smc .nightfall-hero{padding:48px 28px;background-position:66% center}.nightfall-smc .nightfall-hero h1{font-size:44px}.nightfall-smc .nightfall-hero .lead{max-width:420px}.nightfall-smc .download-layout{grid-template-columns:1fr}.nightfall-smc .download-prep{padding:26px}.nightfall-smc .mecha-home{padding:24px}.nightfall-smc .mecha-home .release-facts{grid-column:1/-1}}
+@media(max-width:520px){html{scroll-padding-top:140px}.nightfall-smc .wrap{width:calc(100% - 36px)}.nightfall-smc .nightfall-hero{margin-top:18px;padding:36px 22px;min-height:490px;background:linear-gradient(90deg,#090d14ed,#090d148f),url('/smc/assets/nightfall-hero.webp') 68% center/cover}.nightfall-smc .nightfall-hero h1{font-size:34px;letter-spacing:-1px}.nightfall-smc .nightfall-hero .lead{font-size:14px}.nightfall-smc .nightfall-hero .eyebrow{font-size:9px}.nightfall-smc .nightfall-hero .actions{gap:10px}.nightfall-smc .button{font-size:12px;padding:12px 16px;min-height:46px}.nightfall-smc .nightfall-hero .nightfall-facts{font-size:8px;gap:12px}.nightfall-smc .nightfall-launch{padding:24px 20px;margin-bottom:28px}.nightfall-smc .nightfall-launch h2{font-size:23px}.nightfall-smc .nightfall-countdown strong{font-size:32px}.nightfall-smc .nightfall-countdown span{font-size:7px}.nightfall-smc .nightfall-countdown b{font-size:16px}.nightfall-smc .nightfall-launch-actions{gap:12px;justify-content:flex-start}.nightfall-smc .mecha-home{padding:22px}.nightfall-smc .panel{padding:23px}.nightfall-smc .quick-link{padding:22px}.nightfall-smc .page-heading{padding:32px 0 22px}.nightfall-smc .page-heading h1{font-size:34px}.nightfall-smc .download-heading{padding:28px 22px;margin-top:18px}.nightfall-smc .download-heading h1{font-size:32px}.nightfall-smc .apk-download-card{padding:26px 22px}.nightfall-smc .apk-download-card h2{font-size:33px}.nightfall-smc .download-prep{padding:24px 22px}.nightfall-smc .site-footer{margin-top:32px}.nightfall-smc .footer-inner{gap:22px}}
+@media(prefers-reduced-motion:reduce){.nightfall-smc .quick-link:hover{transform:none}}
