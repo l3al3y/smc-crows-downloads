@@ -33,11 +33,15 @@
 (()=>{'use strict';const button=document.querySelector('[data-v1-apk-button]');
 const resources=[...document.querySelectorAll('[data-v1-resource]')];const notes=[...document.querySelectorAll('[data-v1-release-status]')];
 for(const link of resources)link.addEventListener('click',event=>{if(link.getAttribute('aria-disabled')==='true')event.preventDefault();});
-function render(ready,message){if(button){button.disabled=!ready;button.setAttribute('aria-disabled',String(!ready));button.textContent=ready?(button.hasAttribute('data-compact-apk-button')?'Download APK ↗':'Download SMC Crows v2.0 APK'):'Downloads temporarily unavailable';}
-for(const link of resources){link.setAttribute('aria-disabled',String(!ready));link.tabIndex=ready?0:-1;if(ready)link.setAttribute('href',link.dataset.downloadPath);else link.removeAttribute('href');link.lastElementChild.textContent=ready?'Download ZIP →':'Unavailable';}
+function render(ready,message,resourcesReady=ready){if(button){button.disabled=!ready;button.setAttribute('aria-disabled',String(!ready));button.textContent=ready?(button.hasAttribute('data-compact-apk-button')?'Download APK ↗':'Download SMC Crows v2.0 APK'):'Downloads temporarily unavailable';}
+for(const link of resources){link.setAttribute('aria-disabled',String(!resourcesReady));link.tabIndex=resourcesReady?0:-1;if(resourcesReady)link.setAttribute('href',link.dataset.downloadPath);else link.removeAttribute('href');link.lastElementChild.textContent=resourcesReady?'Download ZIP →':'Unavailable';}
 for(const note of notes)note.textContent=ready&&note.hasAttribute('data-compact-release-status')?'Ready to download.':message;}
 async function refresh(){try{const r=await fetch('/smc/api/release-status',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error();const s=await r.json();
-const ready=s.version==='v2.0'&&s.available===true;render(ready,ready?'v2.0 Stable Version is available. Android 10+ / ARM64. Back up your account and install over your compatible app.':'Downloads are temporarily unavailable. Please retry shortly.');
+const ready=s.version==='v2.0'&&s.available===true,resourcesReady=s.version==='v2.0'&&(s.resources_available===true||s.resources_available===undefined&&ready);
+let message=ready?'v2.0 Stable Version is available. Android 10+ / ARM64. Back up your account and install over your compatible app.':'Downloads are temporarily unavailable. Please retry shortly.';
+if(!ready&&['daily_quota','monthly_quota'].includes(s.reason)&&typeof s.reset_at==='string'&&Number.isFinite(Date.parse(s.reset_at))){const reset=new Intl.DateTimeFormat('en-MY',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Kuala_Lumpur'}).format(new Date(s.reset_at));message=(s.reason==='daily_quota'?'Today’s APK download allowance is used up.':'This month’s APK download allowance is used up.')+' Next refresh: '+reset+' (Malaysia time).'+(resourcesReady?' Resource ZIPs are still available.':'');}
+if(!ready&&s.reason==='quota_unavailable')message='APK availability could not be checked. Please retry shortly. Your installed game is unchanged.';
+render(ready,message,resourcesReady);
 }catch{render(false,'Release status unavailable. Please retry shortly.');}}
 refresh();setInterval(refresh,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});})();
 
@@ -50,3 +54,5 @@ for(const [i,cell] of cells.entries()){const row=cell.closest('tr'),value=Number
 window.addEventListener('smc-counts-ready',()=>{ready=true;animate();},{once:true});
 if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){visible=true;animate();observer.disconnect();}},{threshold:.2});observer.observe(table);}else{visible=true;animate();}
 })();
+
+
