@@ -23,8 +23,14 @@ The exact APK passed full SHA-256, ZIP CRC, manifest, same-certificate V1/V2/V3 
 - SHA-256: `42bbabbe95b3965eb9fd193cf51842459cec9b78e26653ad7f399121170d8ff6`
 - Embedded `assets/crows/p_script.npk`: `3a3a73dff87c2903433085ccfe35633d07cdad3f682f6dbcd7797866da43c32e`
 
-The loose staged `p_script_latest.npk` has a different digest and is not published as a replacement for the tested embedded script. The APK bytes are unchanged. Public hosting integrity is recorded separately after upload.
+The loose staged `p_script_latest.npk` matches the embedded script by direct SHA-256. The supplied staging manifest contains an outdated script digest. The APK bytes are unchanged. The complete anonymous Cloudflare download passed the exact SHA-256 check on 19 October 2026.
 
 Some missing skins/artwork and preview controls remain unverified. MiloSuam merges available assets and does not create missing original resources. Contact cabalme4@gmail.com if you have a complete compatible resource set. If a match freezes, reopening may reconnect you while your character is alive; this is a recovery suggestion, not a guaranteed fix.
 
 Daily download safety limits remain 25,000 storage reads, monthly 250,000. A full APK uses 15 reads; these are not counts of completed downloads. Counters preserve prior versions. All existing tutorial videos remain available.
+
+## Resource coverage
+
+This release publishes the exact tested APK and retains its existing matching extension dependencies. An additional pilot/skin resource upgrade is not included yet. Eight supplied supplemental NPK files pass their size/MD5 checks; two declared skin packs are absent. Those supplemental files are not automatically installed by this APK. No older full-resource archive is substituted. Complete artwork/model coverage is not established.
+
+MediaFire backup: https://www.mediafire.com/file/5pgcodxm4nvpebo/SMC-Crows-v3.0-SDK17-Stable.apk/file

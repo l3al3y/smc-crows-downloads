@@ -44,5 +44,14 @@
     ],
     "original_game": "NetEase Games",
     "kit": "Super Mecha Crows"
-  }
+  },
+  "loose_staged_script_matches_embedded": true,
+  "supplemental_staged_resource_files": 8,
+  "supplemental_resources_automatically_installed": false,
+  "missing_declared_staged_packs": [
+    "res_ext_skin_1_2034699.npk",
+    "res_ext_skin_2_2034699.npk"
+  ],
+  "older_full_resource_archive_substituted": false,
+  "public_Cloudflare_full_SHA256_verified": true
 }
