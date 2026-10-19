@@ -1,0 +1,48 @@
+{
+  "release": "SMC Crows v3.0 Stable",
+  "version": "3.0",
+  "versionCode": 3080317,
+  "filename": "SMC-Crows-v3.0-SDK17-Stable.apk",
+  "bytes": 4237847849,
+  "sha256": "42bbabbe95b3965eb9fd193cf51842459cec9b78e26653ad7f399121170d8ff6",
+  "package": "com.netease.g93na",
+  "minimum_sdk": 29,
+  "target_sdk": 37,
+  "ABI": [
+    "arm64-v8a"
+  ],
+  "certificate_sha256": "a866141838ebbcc2283684bb4fa8a6c2d93b38a687435af8c53e0da8dc9e8905",
+  "signatures_verified": [
+    "v1",
+    "v2",
+    "v3"
+  ],
+  "external_v4_verified": true,
+  "zip_16KB_alignment_verified": true,
+  "pageSizeCompat": "0x20",
+  "native_libraries_below_16KB_alignment": 29,
+  "full_native_16KB_support_established": false,
+  "user_reported_device_test": {
+    "device": "Samsung Galaxy S26 Ultra SM-S948B",
+    "Android": "17 / SDK 37",
+    "GPU": "Adreno 840",
+    "result": "MiloSuam reports 120 FPS smooth gameplay and no observed freeze",
+    "independent_gameplay_capture_in_publication_workflow": false
+  },
+  "embedded_p_script_sha256": "3a3a73dff87c2903433085ccfe35633d07cdad3f682f6dbcd7797866da43c32e",
+  "loose_staged_p_script_published": false,
+  "notes": [
+    "Adaptive hybrid pilot/mecha skinning; exact tested APK is unchanged.",
+    "No guarantee for every phone, skin, full-match duration or native 16 KB execution.",
+    "Install APK once for SDK/code upgrade; resource checks do not replace APK."
+  ],
+  "credits": {
+    "merger_developer": "MiloSuam, APK merger/developer and fellow SMC player",
+    "technical_assistance": [
+      "Kisaki Bo-ru (@rendezvous_1)",
+      "TRazH (@tra_zh / Machu)"
+    ],
+    "original_game": "NetEase Games",
+    "kit": "Super Mecha Crows"
+  }
+}
