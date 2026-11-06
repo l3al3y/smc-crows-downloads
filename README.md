@@ -1,3 +1,5 @@
+> **Android v4.0 voice preview is owner-private.** Open your private link in your phone browser, install the APK, then open Setup and approve the voice download in that browser. Setup downloads and installs the matching packs automatically. See the [official Downloads page](https://irfanfahmi.com/smc/downloads/) for the current Android status. The v3.0 information below is historical.
+
 # SMC Crows v3.0 Stable
 
 Community APK by **MiloSuam, APK merger/developer and fellow SMC player**.
@@ -33,4 +35,4 @@ Daily download safety limits remain 25,000 storage reads, monthly 250,000. A ful
 
 This release publishes the exact tested APK and retains its existing matching extension dependencies. An additional pilot/skin resource upgrade is not included yet. Eight supplied supplemental NPK files pass their size/MD5 checks; two declared skin packs are absent. Those supplemental files are not automatically installed by this APK. No older full-resource archive is substituted. Complete artwork/model coverage is not established.
 
-MediaFire backup: https://www.mediafire.com/file/5pgcodxm4nvpebo/SMC-Crows-v3.0-SDK17-Stable.apk/file
+The v3.0 MediaFire mirror has been retired.
