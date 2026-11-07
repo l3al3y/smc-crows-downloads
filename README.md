@@ -1,4 +1,4 @@
-> **Android v4.0 voice preview is owner-private.** Open your private link in your phone browser, install the APK, then open Setup and approve the voice download in that browser. Setup downloads and installs the matching packs automatically. See the [official Downloads page](https://irfanfahmi.com/smc/downloads/) for the current Android status. The v3.0 information below is historical.
+> **Android v4.0 test build 4080321 is available on the [password-protected Downloads page](https://irfanfahmi.com/smc/downloads/).** Install the APK and open Setup. Setup downloads the required [v4.0 game resources](https://github.com/l3al3y/smc-crows-downloads/releases/tag/smc-crows-v4.0-resources) and installs the included voice packs automatically. Choose game text and voice audio separately in the game settings. The Setup language applies only to Setup. The v3.0 information below is historical.
 
 # SMC Crows v3.0 Stable
 
